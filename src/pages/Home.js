@@ -3,6 +3,8 @@ import Section1 from "../components/pages/home/Section1";
 import Section2 from "../components/pages/home/Section2";
 import Section3 from "../components/pages/home/Section3";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
+
 import { BackTop } from "antd";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
@@ -20,6 +22,7 @@ export default function Home() {
           <ArrowUpwardIcon />
         </div>
       </BackTop>
+      <Footer />
     </>
   );
 }

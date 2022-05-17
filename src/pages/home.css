@@ -97,7 +97,10 @@
   height: 130vh;
   text-align: center;
   font-family: Poppins;
-  background-color: #213233;
+  background: url("assets/home/salons/section2.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgb(45, 45, 45, 0.05);
 }
 
 .home-section2-title {
@@ -105,7 +108,7 @@
   font-weight: 500;
   padding-top: 2em;
   margin-bottom: 1em;
-  color: white;
+  color: rgb(34, 34, 34);
 }
 
 .home-section2-swiper {
@@ -123,7 +126,7 @@
 
 .swiper-card {
   height: 350px;
-  box-shadow: 0 0 4px rgb(34, 34, 34);
+  box-shadow: 0 0 4px rgb(34, 34, 34, 0.1);
 }
 
 .parallax-bg {
@@ -141,14 +144,17 @@
 }
 
 .swiper-card-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: white;
   color: #5452c2;
-  padding: 5px;
   position: absolute;
+  left: 5px;
+  top: 5px;
+  line-height: 1em;
   z-index: 2;
-  padding: 1rem;
-  border-bottom-right-radius: 20px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgb(45, 45, 45);
 }
 
 .section2-buttons {
