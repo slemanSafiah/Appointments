@@ -3,6 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper";
 
+import {Link } from "react-router-dom";
+
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css";
@@ -44,7 +46,7 @@ export default function Section2() {
         </Swiper>
         <div className="section2-buttons">
           <div className="outline-button">See All Categories</div>
-          <div className="line-button">Discover Institutions</div>
+          <Link to="/institutions"><div className="line-button">Discover Institutions</div></Link>
         </div>
       </div>
     </div>

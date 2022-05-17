@@ -176,6 +176,7 @@
   width: 12rem;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 3px rgb(45, 45, 45);
+  list-style : none;
 }
 
 .outline-button:hover {
