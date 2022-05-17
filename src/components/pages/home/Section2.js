@@ -1,13 +1,14 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative } from "swiper";
+import { EffectCoverflow, Pagination } from "swiper";
 
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 import "swiper/css";
-import "swiper/css/effect-creative";
 
 let Categories = [
-  { title: "Hair Cut", image: "assets/home/hair.jpg" },
+  { title: "Hair Style", image: "assets/home/hair.jpg" },
   { title: "Health Care", image: "assets/home/health.jpg" },
   { title: "Beauty", image: "assets/home/beauty.jpg" }
 ];
@@ -18,28 +19,30 @@ export default function Section2() {
       <div className="home-section2-title">Discover by Categories</div>
       <div className="home-section2-swiper">
         <Swiper
+          className="swiper"
+          effect={"coverflow"}
           grabCursor={true}
-          effect={"creative"}
-          creativeEffect={{
-            prev: {
-              shadow: true,
-              translate: [0, 0, -400]
-            },
-            next: {
-              translate: ["100%", 0, 0]
-            }
+          centeredSlides={true}
+          slidesPerView={3}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true
           }}
-          modules={[EffectCreative]}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
         >
-          {Categories.map((cat) => {
+          {Categories.map((cat, idx) => {
             return (
-              <SwiperSlide>
-                <Card image={cat.image} title={cat.title} />
+              <SwiperSlide defaultChecked={idx === 2}>
+                <Card key={idx} image={cat.image} title={cat.title} />
               </SwiperSlide>
             );
           })}
         </Swiper>
-        <div>
+        <div className="section2-buttons">
           <div className="outline-button">See All Categories</div>
           <div className="line-button">Discover Institutions</div>
         </div>

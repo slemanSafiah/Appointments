@@ -8,11 +8,16 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@mui/icons-material": "5.6.2",
+    "@mui/material": "5.7.0",
+    "antd": "4.20.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0",
-    "swiper": "8.1.4"
+    "swiper": "8.1.5"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

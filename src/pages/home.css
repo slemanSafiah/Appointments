@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap");
 
+.up {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 .home-section1 {
   width: 100%;
   height: 100vh;
@@ -79,30 +94,35 @@
 /*! start of Section 2 */
 .home-section2 {
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   text-align: center;
   font-family: Poppins;
+  background-color: #213233;
 }
 
 .home-section2-title {
   font-size: 2.25rem;
   font-weight: 500;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding-top: 2em;
+  margin-bottom: 1em;
+  color: white;
 }
 
 .home-section2-swiper {
-  margin-left: 15%;
-  width: 69%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   margin-top: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+}
+
+.swiper {
+  height: 400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .swiper-card {
-  height: 500px;
-  object-fit: cover;
+  height: 350px;
   box-shadow: 0 0 4px rgb(34, 34, 34);
 }
 
@@ -110,7 +130,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   -webkit-background-size: cover;
@@ -131,6 +151,16 @@
   border-bottom-right-radius: 20px;
 }
 
+.section2-buttons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
 .outline-button {
   margin-top: 1rem;
   padding: 8px 12px;
@@ -143,9 +173,10 @@
 }
 
 .outline-button:hover {
-  background-color: #01939b;
+  background-color: #02cfda;
   cursor: pointer;
   box-shadow: none;
+  transform: scale(1.05);
 }
 
 .line-button {
@@ -161,6 +192,76 @@
 }
 
 .line-button:hover {
-  background-color: #213233;
+  background-color: #5a6d6d;
   cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* ? end of Section 2 */
+
+/* ? start of Section 3 */
+.home-section3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-section3-title {
+  padding-top: 2rem;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.5rem;
+}
+
+.institution-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.institution-image-card {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.home-section3-grid {
+  width: 80%;
+  margin-top: 3em;
+}
+
+.institution-footer-card {
+  background-color: rgba(45, 45, 45, 0.6);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  font-family: Poppins;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.institution-footer-card:hover {
+  height: 100%;
+}
+
+.institution-footer-card-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-bottom: 0.75rem;
+}
+
+.institution-footer-card-sub-title {
+  color: rgb(203, 203, 203);
+  font-size: 0.9rem;
+  font-weight: 200;
 }
